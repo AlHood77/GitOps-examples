@@ -3,6 +3,6 @@ name: temporal-stack
 type: application
 version: 0.17.11
 dependencies:
-- name: temporal
+- name: temporal-stack
   version: 1.17.4
   repository: https://openinnovationprogram.github.io/helm-charts/

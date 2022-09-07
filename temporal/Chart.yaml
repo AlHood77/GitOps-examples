@@ -1,8 +1,7 @@
 apiVersion: v2
 name: temporal-stack
 type: application
-version: 0.17.4
-# appVersion: 0.39.41-alpha
+version: 0.17.11
 dependencies:
 - name: temporal
   version: 1.17.4

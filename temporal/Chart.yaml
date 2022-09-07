@@ -6,4 +6,4 @@ appVersion: 1.17.2
 dependencies:
 - name: temporal
   version: 1.17.4
-  repository: https://github.com/OpenInnovationProgram/helm-charts
+  repository: https://openinnovationprogram.github.io/helm-charts/

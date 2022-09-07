@@ -81,60 +81,26 @@ temporal-stack:
         annotations: {} # Evaluated as template
         type: ClusterIP
         port: 7233
-      metrics:
-        annotations:
-          enabled: true
-      podAnnotations: {}
-      podLabels: {}
-      resources: {}
-      nodeSelector: {}
-      tolerations: []
-      affinity: {}
+
 
     history:
-      # replicaCount: 1
+      replicaCount: 1
       service:
         # type: ClusterIP
         port: 7234
-      metrics:
-        annotations:
-          enabled: true
-      podAnnotations: {}
-      podLabels: {}
-      resources: {}
-      nodeSelector: {}
-      tolerations: []
-      affinity: {}
+
 
     matching:
-      # replicaCount: 1
+      replicaCount: 1
       service:
         # type: ClusterIP
         port: 7235
-      metrics:
-        annotations:
-          enabled: false
-      podAnnotations: {}
-      podLabels: {}
-      resources: {}
-      nodeSelector: {}
-      tolerations: []
-      affinity: {}
 
     worker:
-      # replicaCount: 1
+      replicaCount: 1
       service:
         # type: ClusterIP
         port: 7239
-      metrics:
-        annotations:
-          enabled: true
-      podAnnotations: {}
-      podLabels: {}
-      resources: {}
-      nodeSelector: {}
-      tolerations: []
-      affinity: {}
 
   admintools:
     enabled: true
@@ -180,17 +146,13 @@ temporal-stack:
     podAnnotations: {}
     podLabels: {}
 
-    resources: {}
-    # We usually recommend not to specify default resources and to leave this as a conscious
-    # choice for the user. This also increases chances charts run on environments with little
-    # resources, such as Minikube. If you do want to specify resources, uncomment the following
-    # lines, adjust them as necessary, and remove the curly braces after 'resources:'.
-    # limits:
-    #  cpu: 100m
-    #  memory: 128Mi
-    # requests:
-    #  cpu: 100m
-    #  memory: 128Mi
+    resources:
+      limits:
+       cpu: 100m
+       memory: 128Mi
+      requests:
+       cpu: 100m
+       memory: 128Mi
 
     nodeSelector: {}
 

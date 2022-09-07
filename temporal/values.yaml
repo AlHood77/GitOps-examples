@@ -50,6 +50,7 @@ temporal-stack:
 
       persistence:
         default:
+          secretKey: password
           driver: "sql"
 
           sql:
